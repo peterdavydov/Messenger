@@ -46,7 +46,7 @@ class Server:
         time.sleep(1)
     
     def check_connection(self):
-        if self.msg == "DISCONNECT":
+        if self.msg == "/DISCONNECT":
             self.stop_connection_user()
 
 

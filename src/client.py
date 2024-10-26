@@ -20,7 +20,7 @@ class Client:
         self.check_connection = True
     
     def send_messege(self, messege):
-        self.check_connection = not(messege == "DISCONNECT")
+        self.check_connection = not(messege == "/DISCONNECT")
         msg_out = messege.encode(FORMAT)
         self.client.send(msg_out)
         time.sleep(1)
